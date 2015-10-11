@@ -14,16 +14,14 @@
   ~ limitations under the License.
   -->
 
-<resources>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <color name="actionbar_color">#3FBA91</color>
+    <item android:state_activated="true"
+          android:drawable="@color/item_activated_color"/>
 
-    <color name="titlestrip_background_color">#DEDEDE</color>
-    <color name="titlestrip_text_color">#999999</color>
+    <item android:state_pressed="true"
+          android:drawable="@color/item_pressed_color"/>
 
-    <color name="item_border_color">#666666</color>
-    <color name="item_default_color">#EEEEEE</color>
-    <color name="item_pressed_color">#CCCCCC</color>
-    <color name="item_activated_color">#77CEEE</color>
+    <item android:drawable="@color/item_default_color"/>
 
-</resources>
+</selector>
